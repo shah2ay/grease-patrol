@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Grease Patrol</title>
+    <style>
+        body {
+            overflow-x: hidden;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        
+        main {
+            padding-left: 200px;
+            padding-right: 200px;
+            padding-bottom: 50px;
+        }
+
+        h1 {
+            text-align: left;
+            margin-left: 0px;
+            font-size: 40px; /* Larger font size for the heading */
+            font-family: 'Arial', sans-serif; /* Choose a different font style */
+            font-weight: bold; /* Make the heading bold */
+            margin-bottom: 0px; /* Add some space below the heading */
+            margin-top: 20px;
+            color:#030164
+        
+        }
+
+        /* Styles for the new Service Description sections */
+        .service-description {
+            background-color: #f8f8f8; /* Light background for the description sections */
+            padding: 10px;
+            margin: 20px 0; /* Space between sections */
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-description h2 {
+            text-align: left;
+            margin-left: 20px;
+            color: #030164; /* Use your branding color for the section titles */
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .service-description p {
+            text-align: left;
+            margin-left: 20px;
+            font-size: 18px;
+            color: #333;
+            line-height: 1.5;
+        }
+
+
+        footer {
+            background-color: #030164;
+            color: white;
+            padding: 20px;
+            position: static;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="header-container"></div>
+        <script>
+           window.onload = function () {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('header-container').innerHTML = data);
+            }
+        </script>
+
+    <main>
+        <h1>Services Overview</h1>
+  
+        <!-- New Service Description Sections -->
+        <section class="service-description">
+            <h2>Grease Interceptor Pumping</h2>
+            <p>Grease interceptor pumping is an essential service for businesses that generate large amounts of fats, oils, and grease (FOG), such as restaurants and food processing facilities. Regular pumping of your grease interceptor helps maintain its efficiency by removing the buildup of grease, which can cause blockages, foul odors, and even backups in your plumbing. This maintenance prevents costly repairs and ensures compliance with local health and safety regulations. At Grease Patrol, our trained technicians have the expertise and equipment to pump and dispose of the grease responsibly, keeping your business running smoothly.</p>
+        </section>
+    
+        <section class="service-description">
+            <h2>Grease Trap Pumping</h2>
+            <p>Grease trap pumping is a crucial part of maintaining a clean and safe environment in any commercial kitchen. Over time, grease traps can accumulate debris and FOG, leading to unpleasant odors, slow drainage, and even plumbing issues. By scheduling regular pumping, you can avoid these problems and ensure your kitchen stays compliant with local wastewater regulations. Our team at Grease Patrol is highly trained to perform this service efficiently, using the latest tools to remove all waste, while keeping your kitchen's operations unaffected.</p>
+        </section>
+    
+        <section class="service-description">
+            <h2>Grease Trap & Interceptor Cleaning</h2>
+            <p>Grease trap and interceptor cleaning are vital to the long-term operation of your grease management system. Left unchecked, the buildup of grease can lead to clogs, foul odors, and expensive repairs. Our professional cleaning service removes accumulated grease and debris from both grease traps and interceptors, restoring their functionality and extending their lifespan. Our expert technicians at Grease Patrol are trained to thoroughly clean and inspect your system, ensuring it's operating at its best and preventing any future issues from arising. Trust us to handle the dirty work so you can focus on running your business.</p>
+        </section>
+    </main>
+    
+    <footer>
+        &copy; 2025 Grease Patrol. All Rights Reserved.
+    </footer>
+    <script src="menu.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+/* Header styles */
+header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: white;
+    color: #030164;
+    padding: 5px;
+    font-size: 10px;
+    border-bottom: 2px solid #030164;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures it stays above other content */
+}
+
+header .logo-container img {
+    height: 135px;
+    margin-right: 15px;
+}
+
+header nav {
+    display: flex;
+    gap: 30px;
+    padding-right: 30px;
+    margin-top: 20px;
+}
+
+header .nav-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #030164;
+    color: white;
+    padding: 10px 15px;
+    margin-right: 0;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+    width: 100px;
+    text-align: center;
+}
+
+header .nav-button:hover {
+    background-color: #02014f; /* Darker blue on hover */
+}
+
+/* Phone box styling */
+header .phone-box-container {
+    display: flex;
+    gap: 0px; 
+    margin-bottom: 10px; 
+    position: absolute;
+    right: 35px;
+    top: 80px;
+}
+
+header .phone-box {
+    display: flexbox;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 0px;
+    font-size: 16px;
+    text-align: center;
+}
+
+header .phone-box-1 {
+    background-color: #323236ae;
+    width: 108px;
+}
+
+header .phone-box-2 {
+    background-color: #030164;
+    width: 120px;
+}
+
+.phone-box i {
+    margin-right: 12px; /* Space between icon and text */
+}

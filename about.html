@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Grease Patrol</title>
+    <style>
+        body {
+            overflow-x: hidden;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        
+        main {
+            padding-left: 200px;
+            padding-right: 200px;
+            padding-bottom: 50px;
+        }
+
+        h1 {
+            text-align: left;
+            margin-left: 0px;
+            font-size: 40px; /* Larger font size for the heading */
+            font-family: 'Arial', sans-serif; /* Choose a different font style */
+            font-weight: bold; /* Make the heading bold */
+            margin-bottom: 0px; /* Add some space below the heading */
+            margin-top: 20px;
+            color:#030164
+        
+        }
+
+        /* Styles for the new Service Description sections */
+        .service-description {
+            background-color: #f8f8f8; /* Light background for the description sections */
+            padding: 10px;
+            margin: 15px 0; /* Space between sections */
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-description h2 {
+            text-align: left;
+            margin-left: 20px;
+            color: #030164; /* Use your branding color for the section titles */
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        .service-description p {
+            text-align: left;
+            margin-left: 20px;
+            font-size: 18px;
+            color: #333;
+            line-height: 1.5;
+        }
+
+
+        footer {
+            background-color: #030164;
+            color: white;
+            padding: 20px;
+            position: static;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="header-container"></div>
+    <script>
+       window.onload = function () {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('header-container').innerHTML = data);
+            }
+    </script>
+
+    <main>
+        <h1>About Us</h1>
+  
+        <!-- New Service Description Sections -->
+        <section class="service-description">
+            <h2>Our Mission</h2>
+            <p>At Grease Patrol, our mission is to provide honest, high-quality grease trap and interceptor services that help our customers succeed. We believe in building trust through transparency, reliability, and exceptional service. Our team is committed to delivering dependable, top-tier solutions that keep your business running smoothly and in compliance with regulations. We hold ourselves to the highest standards in everything we do, continuously striving for excellence to ensure that our customers receive the best service possible. With Grease Patrol, you can count on a dedicated partner who puts your success first.</p>
+        </section>
+
+        <section class="service-description">
+            <h2>Who We Are</h2>
+            <p>We are a team that deeply appreciates great service. We grew up in the world of services industries, and know how important it is to be reliable, high quality, and trustworthy. We are committed to becoming the #1 grease trap service in Cincinnati, by committment to quality and reliability.</p>
+        </section>
+
+
+    </main>
+    
+    <footer>
+        &copy; 2025 Grease Patrol. All Rights Reserved.
+    </footer>
+    <script src="menu.js" defer></script>
+
+</body>
+</html>
